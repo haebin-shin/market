@@ -13,15 +13,15 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=/orders/**, 
-        - id: inventory
+        - id: pay
           uri: http://localhost:8083
           predicates:
-            - Path=/inventories/**, 
+            - Path=/pay/**, 
         - id: delivery
           uri: http://localhost:8084
           predicates:
             - Path=/deliveries/**, 
-        - id: customercenter
+        - id: mypage
           uri: http://localhost:8085
           predicates:
             - Path=, 

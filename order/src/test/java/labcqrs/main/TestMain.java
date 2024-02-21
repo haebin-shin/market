@@ -1,4 +1,4 @@
-package labcqrs.main;
+package market.main;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -8,6 +8,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
     plugin = { "pretty", "html:target/cucumber" },
     features = "src/test/resources/features",
-    extraGlue = "labcqrs/common"
+    extraGlue = "market/common"
 )
 public class TestMain {}

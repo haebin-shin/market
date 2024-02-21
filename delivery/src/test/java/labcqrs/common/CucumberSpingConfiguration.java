@@ -1,7 +1,7 @@
-package labcqrs.common;
+package market.common;
 
 import io.cucumber.spring.CucumberContextConfiguration;
-import labcqrs.DeliveryApplication;
+import market.DeliveryApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @CucumberContextConfiguration
