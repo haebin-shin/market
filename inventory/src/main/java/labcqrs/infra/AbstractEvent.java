@@ -1,9 +1,9 @@
-package market.infra;
+package labcqrs.infra;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import market.OrderApplication;
-import market.config.kafka.KafkaProcessor;
+import labcqrs.InventoryApplication;
+import labcqrs.config.kafka.KafkaProcessor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHeaders;
@@ -32,7 +32,7 @@ public class AbstractEvent {
         /**
          * spring streams 방식
          */
-        KafkaProcessor processor = OrderApplication.applicationContext.getBean(
+        KafkaProcessor processor = InventoryApplication.applicationContext.getBean(
             KafkaProcessor.class
         );
         MessageChannel outputChannel = processor.outboundTopic();

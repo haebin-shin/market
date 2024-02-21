@@ -31,12 +31,12 @@ spring:
         event-in:
           group: inventory
 #<<< EDA / Topic Name
-          destination: market
+          destination: labcqrs
 #>>> EDA / Topic Name
           contentType: application/json
         event-out:
 #<<< EDA / Topic Name
-          destination: market
+          destination: labcqrs
 #>>> EDA / Topic Name
           contentType: application/json
 
@@ -75,10 +75,10 @@ spring:
       bindings:
         event-in:
           group: inventory
-          destination: market
+          destination: labcqrs
           contentType: application/json
         event-out:
-          destination: market
+          destination: labcqrs
           contentType: application/json
 
 

@@ -1,6 +1,6 @@
-package market;
+package labcqrs;
 
-import market.config.kafka.KafkaProcessor;
+import labcqrs.config.kafka.KafkaProcessor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -10,12 +10,12 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 @EnableBinding(KafkaProcessor.class)
 @EnableFeignClients
-public class PayApplication {
+public class InventoryApplication {
 
     public static ApplicationContext applicationContext;
 
     public static void main(String[] args) {
         applicationContext =
-            SpringApplication.run(PayApplication.class, args);
+            SpringApplication.run(InventoryApplication.class, args);
     }
 }

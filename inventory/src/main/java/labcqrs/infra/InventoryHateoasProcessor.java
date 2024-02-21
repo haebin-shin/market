@@ -1,17 +1,17 @@
-package market.infra;
+package labcqrs.infra;
 
-import market.domain.*;
+import labcqrs.domain.*;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.RepresentationModelProcessor;
 import org.springframework.stereotype.Component;
 
 @Component
-public class OrderHateoasProcessor
-    implements RepresentationModelProcessor<EntityModel<Order>> {
+public class InventoryHateoasProcessor
+    implements RepresentationModelProcessor<EntityModel<Inventory>> {
 
     @Override
-    public EntityModel<Order> process(EntityModel<Order> model) {
+    public EntityModel<Inventory> process(EntityModel<Inventory> model) {
         return model;
     }
 }
